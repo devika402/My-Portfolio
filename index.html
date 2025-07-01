@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body class="light">
+  <header>
+    <nav>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h1>Hi, I'm Devika</h1>
+      <p>Front-end developer passionate about creating dynamic and interactive web experiences.</p>
+      <p>"Bringing ideas to life through code and creativity."</p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <i class="fab fa-html5 skill-icon html"></i>
+          <div>
+            <span>HTML5</span>
+            <div class="skill-level">Advanced</div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-css3-alt skill-icon css"></i>
+          <div>
+            <span>CSS</span>
+            <div class="skill-level">Intermediate</div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-js skill-icon js"></i>
+          <div>
+            <span>JavaScript</span>
+            <div class="skill-level">Intermediate</div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-python skill-icon python"></i>
+          <div>
+            <span>Python</span>
+            <div class="skill-level">Intermediate</div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fas fa-database skill-icon sql"></i>
+          <div>
+            <span>SQL</span>
+            <div class="skill-level">Intermediate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card interactive" data-project="mood">
+          <h3>Mood Elevation Carousel</h3>
+          <button class="btn open-modal">View Details</button>
+        </div>
+        <div class="project-card interactive" data-project="study">
+          <h3>Study Track – Student Manager</h3>
+          <button class="btn open-modal">View Details</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+        <div id="form-response" class="form-response"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/dallidevika/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <p>© 2025 Dalli Devika</p>
+  </footer>
+
+  <!-- Project Modals -->
+  <div class="modal" id="modal-mood">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Mood Elevation Carousel</h2>
+      <p>A colorful carousel that elevates your mood using animations and smooth transitions.</p>
+      <a href="https://dainty-cassata-8ebc91.netlify.app/" class="btn" target="_blank" rel="noopener">Live Demo</a>
+      <a href="https://github.com/devika402/Mood-Elevation-Carousel" class="btn secondary" target="_blank" rel="noopener">View Code</a>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-study">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Study Track – Student Manager</h2>
+      <p>Manage student records, track performance, and visualize progress in a clean UI.</p>
+      <a href="https://capable-piroshki-33250b.netlify.app/" class="btn" target="_blank" rel="noopener">Live Demo</a>
+      <a href="https://github.com/devika402/StudyTrack" class="btn secondary" target="_blank" rel="noopener">View Code</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
